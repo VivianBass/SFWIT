@@ -1,8 +1,6 @@
-# Este algoritmo calcula cuántos días tienes en el periodo de los años 1582 al 2023. 
-# Se calcula desde 1582 porque es el año que empezaron a usarse los años bisiestos
-
 from datetime import datetime
 
+print("\nEste algoritmo calcula cuántos días tienes en el periodo de los años 1582 al 2023. \nSe calcula desde 1582 porque es el año que empezaron a usarse los años bisiestos")
 
 try:
     fecha = input("\nIngresa tu fecha de nacimiento en el formato YYYY-MM-DD: ")

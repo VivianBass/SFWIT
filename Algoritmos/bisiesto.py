@@ -1,4 +1,4 @@
-# Este algoritmo calcula si un año es bisiesto o no.
+print("\nEste algoritmo calcula si un año es bisiesto o no.")
 
 try:
 

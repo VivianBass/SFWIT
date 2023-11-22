@@ -1,4 +1,4 @@
-# Este algoritmo calcula el incremento salarial de una persona.
+print("\nEste algoritmo calcula el incremento salarial de una persona.")
 
 try: 
     salario=input("\n¿Cuál es el salario en pesos?: ")

@@ -1,4 +1,4 @@
-# Este algoritmo calcula si un número es par o impar
+print("\nEste algoritmo calcula si un número es par o impar")
 
 try:
     numero=float(input("\nDigita el número del que quieres saber si es par o impar: "))

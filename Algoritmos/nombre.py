@@ -1,5 +1,7 @@
-# Este algoritmo pide el nombre de la persona y lo muestra en pantalla
 import re
+
+
+print("\nEste algoritmo pide el nombre de la persona y lo muestra en pantalla")
 
 nombre = input("\n¿Cómo te llamas?: ")
 

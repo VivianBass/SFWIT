@@ -1,4 +1,4 @@
-# Este algoritmo ordena una lista de 5 números de menor a mayor
+print("\nEste algoritmo ordena una lista de 5 números de menor a mayor")
 
 try:
     entrada = input("\nIngresa una lista de 5 números separados por espacios: ")

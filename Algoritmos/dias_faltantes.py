@@ -1,7 +1,6 @@
-# Este algoritmo calcula cuántos días faltan de la fecha actual a día de muertos y navidad.
-
 from datetime import datetime
 
+print("\nEste algoritmo calcula cuántos días faltan de la fecha actual a día de muertos y navidad.")
 
 hoy = datetime.now()
 muertos = datetime.strptime("2024-11-01", '%Y-%m-%d')

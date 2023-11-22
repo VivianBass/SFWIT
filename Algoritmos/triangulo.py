@@ -1,4 +1,4 @@
-# Este algoritmo calcula el área de un triángulo
+print("\nEste algoritmo calcula el área de un triángulo")
 
 try: 
     b = float(input("\nDame la base del triángulo: "))

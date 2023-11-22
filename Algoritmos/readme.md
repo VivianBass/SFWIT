@@ -1,7 +1,7 @@
 # Lista de algorimos:
 
-- [ ] Calcule el volumen de una esfera
-- [ ] Ordene 5 números de menor a mayor
+- [x] Calcule el volumen de una esfera
+- [x] Ordene 5 números de menor a mayor
 - [ ] Encuentre el factorial de cualquier número dado
 - [x] Te diga si un número es par o impar
 - [x] Calcule los días que faltan para día de muertos y navidad

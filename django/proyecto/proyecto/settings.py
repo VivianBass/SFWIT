@@ -79,8 +79,12 @@ WSGI_APPLICATION = 'proyecto.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'safe_places_fwwj',
+        'USER': 'sitioseguros',
+        'PASSWORD': 'TjK1loNjCzVK3TC4eQ4skpg5pg2anJkY',
+        'HOST': 'dpg-cmp9n4mn7f5s73dd81k0-a.oregon-postgres.render.com',
+        'PORT': '5432',
     }
 }
 
@@ -121,7 +125,9 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'staticfiles'),
+]
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 

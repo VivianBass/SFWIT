@@ -31,14 +31,14 @@ class Place(models.Model):
 class Picture(models.Model):
     id = models.AutoField(primary_key=True) 
     place = models.ForeignKey('Place', on_delete=models.RESTRICT, db_column='place_id')
-    content = models.CharField(max_length=45)
+    image = models.ImageField(null=True)
 
 class Review(models.Model):
     id = models.AutoField(primary_key=True)  
     user = models.ForeignKey('User', on_delete=models.RESTRICT, db_column='user_id')
     place = models.ForeignKey('Place', on_delete=models.RESTRICT, db_column='place_id')
     date = models.DateTimeField()
-    comment = models.CharField(max_length=250) 
+    comment = models.CharField(max_length=250, null=True) 
     score = models.FloatField()
 
 class Rating(models.Model):
@@ -46,8 +46,8 @@ class Rating(models.Model):
     user = models.ForeignKey('User', on_delete=models.RESTRICT, db_column='user_id')
     date = models.DateTimeField()
     review = models.ForeignKey('Review', on_delete=models.RESTRICT, db_column='review_id')
-    like = models.IntegerField()
-    dislike = models.IntegerField()
+    like = models.IntegerField(null=True)
+    dislike = models.IntegerField(null=True)
 
 class Address_place(models.Model):
     id = models.AutoField(primary_key=True) 
@@ -58,10 +58,10 @@ class Address_place(models.Model):
     region = models.CharField(max_length=45) 
     colony = models.CharField(max_length=45) 
     street = models.CharField(max_length=50) 
-    ext_number = models.IntegerField() 
-    int_number = models.IntegerField() 
-    latitude = models.FloatField() 
-    longitude = models.FloatField()
+    ext_number = models.IntegerField(null=True) 
+    int_number = models.IntegerField(null=True) 
+    latitude = models.FloatField(null=True) 
+    longitude = models.FloatField(null=True)
 
 class Direccion_cat(models.Model):
     """
